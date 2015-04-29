@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+	<head>
+		<title>EWGAT2 - Scatter Plot Matrix</title>
+		<script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+		<script type="text/javascript" src="jquery-2.1.3.min.js"></script>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		
+		<script type="text/javascript" src="main.js"></script>
+		
+		<style rel="stylesheet" type="text/css">			 	 
+			#scm svg {
+			  font: 8px sans-serif;
+			  padding: 10px;
+			  background-color:rgba(0, 0, 0, 0.002)
+			}
+
+			#scm .axis,
+			.frame {
+			  shape-rendering: crispEdges;
+			}
+
+			#scm .axis line {
+			  stroke: #777;
+			  stroke-dasharray: 1,3;
+			  opacity: .7;
+			}
+
+			#scm .axis path {
+			  display: none;
+			}
+
+			#scm .frame {
+			  fill: none;
+			  stroke: #aaa;
+			}
+
+			#scm circle {
+			  fill-opacity: .7;
+			}
+
+			#scm circle.hiddenCircle {
+			  fill: #ccc !important;
+			}
+
+			#scm .extent {
+			  fill: #000;
+			  fill-opacity: .125;
+			  stroke: #fff;
+			}
+			
+			#scm{
+				width:600px;
+				height:480px;
+				background-color: #F9F9F9;
+				border-radius: 10px;
+				box-shadow: 0px 0px 10px rgb(113, 113, 113);
+			}
+			
+			#scm-control{
+				text-align:left;
+				width:100px;
+				height:450px;
+				font: 8px sans-serif;
+				float:left;
+			}
+			
+			#scm-plot{
+				width:500px;
+				height:500px;
+				float:left;
+				margin:0;
+				padding-top:0;
+			}
+			
+			.scm-text {
+			  font-family: sans-serif;
+			  font-weight: 500;
+			  font-size:18px;
+			}
+			
+			#to-include{float:left;margin:0;padding:0;}
+			
+			#to-include option:selected{background-color:white;}
+			
+			.scm-highlight {background-color:#b9d6ed;}
+			
+			#scm .bar rect {
+			  fill: steelblue;
+			  shape-rendering: crispEdges;
+			}
+
+			#scm .bar text {
+			  fill: #fff;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div id="scm">
+			<div id="scm-control">
+				<select id="to-include" name="scm-vars" class="form-control" multiple="multiple" size="28">
+				</select>
+			</div>
+			<div id="scm-plot"></div>
+		</div>
+	</body>
+</html>
