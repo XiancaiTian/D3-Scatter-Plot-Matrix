@@ -1,7 +1,7 @@
 # Scatter Plot Matrix
 Scatter Plot Matrix(SPM) is a visual built using D3.js, it provides a way to explore the correlation and distribution of multiple attributes.
 
-![Shawn's SPM](https://github.com/XiancaiTian/Scatter-Plot-Matrix/blob/master/SPM_Shawn.png?raw=true)
+<img src="https://github.com/XiancaiTian/Scatter-Plot-Matrix/blob/master/SPM_Shawn.png" alt="SPM" style="width: 200px;height:160px;"/>
 
 Compared with SPM made by [Mike Bostock](https://bl.ocks.org/mbostock/4063663), my SPM has the following advantages:
 
