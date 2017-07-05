@@ -1,14 +1,17 @@
-# D3-Scatter-Plot-Matrix
-Scatter Plot Matrix(SPM) is a visual component I built for my capstone project, D3.js  is used for building the application.
+# Scatter Plot Matrix
+Scatter Plot Matrix(SPM) is a visual built using D3.js, it provides a way to explore the correlation and distribution of multiple attributes.
 
-The object is help to spot collinearity when there are more than a couple of independent variables, by using SPM you can easily explorer the relation between pairs of attributes.
+![](Mike's SPM)
+![](My SPM)
 
-Some of the distinctive features of SPM are listed as follows:
+Compared with SPM made by [https://bl.ocks.org/mbostock/4063663](Mike Bostock), my SPM has the following advantages:
 
-1) Using ajax to load data so you don;t need to wait for browser completing loading all the code;
+1) You are free to add and remove attributes form the list;
 
-2) Automatically detect numeric attributes and drop those are not; (Don’t do the stupid thing to map user names as data on a scatter plot!!)
+2) It can detect quantity attributes from source data and quality attributes will not show in the list;
 
-3) There is no limit selecting your desired attributes for exploring, but taking that real-life application always have a view limit such as window size and monitor size, I do set SPM frame as fixed, so cell size will decrease as you add more variables to the matrix;
+3) Cell size scales down as you add more variables so that users can still have a good overview of all the data;
 
-4) Since there is no meaning exploring the relation between you and yourself, I remove the scatter plot and use histgram instead, telling whether the data is skew or normally distributed.
+4) It shows histogram of each attribute in diagonal cells instead of pointless scatter plot of the attribute itself;
+
+5) It hides duplicated scatter plots to make the visual a bit neater.
